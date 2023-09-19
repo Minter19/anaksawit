@@ -1,4 +1,3 @@
-import Image from 'next/image'
 import IndexNavbar from './components/Navbar/IndexNavbar'
 import IndexHero from './components/Hero/IndexHero'
 import IndexStat from './components/Stat/IndexStat'

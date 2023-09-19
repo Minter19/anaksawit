@@ -1,9 +1,9 @@
 import './globals.css'
 import type { Metadata } from 'next'
-import { Poppins } from 'next/font/google'
-import Script from 'next/script'
+import { Poppins, Skranji } from 'next/font/google'
 
-const inter = Poppins({ subsets: ['latin'], weight: ['200', '400', '700'] })
+const poppins = Poppins({ subsets: ['latin'], weight: ['100','200', '300', '400', '700'] })
+const skranji = Skranji({ subsets: ['latin'], weight: ['400','700'] })
 
 export const metadata: Metadata = {
   title: 'Anak Sawit',
@@ -17,7 +17,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={poppins.className}>{children}</body>
     </html>
   )
 }
