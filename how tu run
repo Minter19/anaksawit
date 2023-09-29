@@ -1,0 +1,14 @@
+
+
+
+untuk default env : npm run build && pm2 start ecosystem.config.js
+untuk development env : npm run build && pm2 start ecosystem.config.js --env development
+untuk production env : npm run build && pm2 start ecosystem.config.js --env production
+
+
+catatan  pribadi:
+  untuk env yang akan dipakai public dapat ditaruh di .env.local
+   contoh : NEXT_PUBLIC_JUDUL_APP = "JUDUL APP NYA"
+  
+  env.local yang bersifat tidak public dan bersifat lokal 
+  env ecosystem.config.js akan digunakan hanya di server side untuk menimpa env lokal
